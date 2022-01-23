@@ -14,4 +14,4 @@ def get_n_closest_trucks(latitude, longitude, n):
         truck['distance_from_truck'] = distance_from_truck
 
     trucks_with_distance = sorted(food_truck_data, key=lambda x: x['distance_from_truck'])
-    print(trucks_with_distance[:n])
+    return trucks_with_distance[:n]

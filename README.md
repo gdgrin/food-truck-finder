@@ -7,3 +7,7 @@ For my solution, I want something that is easily accessible for everyone - even 
 
 ![Design Diagram](https://github.com/gdgrin/food-truck-finder/blob/main/images/Design%20Diagram.png)
 
+## Future Considerations
+- History Based On User
+    Can add features to save a user's request and choice to a database, and take this into consideration for future requests.
+    By doing this we can suggest new places that the user has not seen before, or suggest types of cuisine that the user generally enjoys.
