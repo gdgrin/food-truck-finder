@@ -2,10 +2,12 @@ import requests
 from geopy import distance
 
 def get_food_truck_info():
+    """Get food truck dataset from endpoint"""
     r = requests.get('https://data.sfgov.org/resource/rqzj-sfat.json')
     return r.json()
 
 def get_n_closest_trucks(latitude, longitude, n):
+    """Calculate distance to food truck from current location, then filter closest"""
     food_truck_data = get_food_truck_info()
     current_location = (latitude, longitude)
     for truck in food_truck_data:
@@ -18,6 +20,7 @@ def get_n_closest_trucks(latitude, longitude, n):
     return format_response(trucks_with_distance[:n])
 
 def format_response(res):
+    """Format response to have type of food and address"""
     response = "Here are some options: \n"
     for r in res:
         response += r['fooditems']
