@@ -20,6 +20,10 @@ SMS Api: Twilio
 I chose to do a mix of familiarity and exploration for the technologies I used. I am very confortable with Python Flask Apps, I have some experience using the Twilio Api, and I have never deployed a Microsft Azure web app before. Had I been more comfortable with it, I probably would have used the serverless option (Function).
 
 
+## Testing
+I chose to test locally by running the flask app and sending requests using Postman. The next step would be adding unit and integration tests directly to the repo.
+
+
 ## Future Considerations
 - History Based On User
     Can add features to save a user's request and choice to a database, and take this into consideration for future requests.
